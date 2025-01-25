@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom ChatGPT for Legal Practice</title>
+</head>
+<body>
+    <h1>Custom ChatGPT for Legal Practice</h1>
+    <form method="POST">
+        <textarea name="query" placeholder="Enter your legal question here..." rows="5" cols="50"></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    {% if query and response %}
+        <h2>Your Query:</h2>
+        <p>{{ query }}</p>
+        <h2>ChatGPT Response:</h2>
+        <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html>
